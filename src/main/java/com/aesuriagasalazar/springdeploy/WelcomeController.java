@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WelcomeController {
 
-    @Value("${app.varexample}")
-    private String user;
+//    @Value("${app.varexample}")
+//    private String user;
 
     @GetMapping("/api/hello")
     public String welcome() {
-        System.out.println(user);
+//        System.out.println(user);
         return "Hello User";
     }
 }
