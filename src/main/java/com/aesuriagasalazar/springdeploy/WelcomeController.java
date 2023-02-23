@@ -16,6 +16,11 @@ public class WelcomeController {
         return "Hello User";
     }
 
+    @GetMapping("/api/message")
+    public String message() {
+        return "New message from spring";
+    }
+
     @GetMapping("/")
     public String home() {
         return "<!doctype html>\n" +
